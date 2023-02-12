@@ -56,7 +56,11 @@
  *	The commented line below should never be uncommented. It is just here to stress a point that
  *	you shouldn't try to enable the Glaux build in this way.
  */
+<<<<<<< HEAD
 #define		WARP_BUILD_ENABLE_FRDMKL03			1
+=======
+//#define		WARP_BUILD_ENABLE_FRDMKL03			0
+>>>>>>> 4b6c4b0c6d554b092aabce9f43b4308dc595e655
 
 /*
  *	Force the required configuration if WARP_BUILD_ENABLE_GLAUX_VARIANT is set
