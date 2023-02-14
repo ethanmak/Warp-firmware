@@ -176,10 +176,10 @@
 	volatile WarpUARTDeviceState			deviceBGXState;
 #endif
 
-// #if (WARP_BUILD_ENABLE_DEVSSD1331)
-// 	#include "devSSD1331.h"
-// 	volatile WarpSPIDeviceState			deviceSSD1331State;
-// #endif
+#if (WARP_BUILD_ENABLE_DEVSSD1331)
+	#include "devSSD1331.h"
+	volatile WarpSPIDeviceState			deviceSSD1331State;
+#endif
 
 
 volatile i2c_master_state_t				i2cMasterState;
@@ -1999,6 +1999,10 @@ main(void)
 			warpPrint("Should not get here...");
 		}
 	#endif
+
+	warpPrint("About to initialize SSD1331\n");
+	devSSD1331init();
+	warpPrint("Done\n");
 
 	while (1)
 	{
