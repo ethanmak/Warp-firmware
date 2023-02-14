@@ -176,6 +176,11 @@
 	volatile WarpUARTDeviceState			deviceBGXState;
 #endif
 
+// #if (WARP_BUILD_ENABLE_DEVSSD1331)
+// 	#include "devSSD1331.h"
+// 	volatile WarpSPIDeviceState			deviceSSD1331State;
+// #endif
+
 
 volatile i2c_master_state_t				i2cMasterState;
 volatile spi_master_state_t				spiMasterState;
