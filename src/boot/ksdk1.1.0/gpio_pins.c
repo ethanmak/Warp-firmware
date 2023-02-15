@@ -166,7 +166,18 @@ gpio_output_pin_user_config_t	outputPins[] = {
 			.config.driveStrength = kPortLowDriveStrength,
 		},
 	#elif (WARP_BUILD_ENABLE_FRDMKL03)
-
+		{
+			.pinName = kWarpPinUnusedPTB13,
+			.config.outputLogic = 1,
+		},
+		{
+			.pinName = kWarpPinUnusedPTA12,
+			.config.outputLogic = 1,
+		},
+		{
+			.pinName = kWarpPinUnusedPTB0,
+			.config.outputLogic = 1,
+		},
 	#endif
 
 	{
