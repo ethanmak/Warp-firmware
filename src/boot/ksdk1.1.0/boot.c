@@ -2000,9 +2000,11 @@ main(void)
 		}
 	#endif
 
-	warpPrint("About to initialize SSD1331\n");
-	devSSD1331init();
-	warpPrint("Done\n");
+	#if (WARP_BUILD_ENABLE_DEVSSD1331)
+		warpPrint("About to initialize SSD1331\n");
+		devSSD1331init();
+		warpPrint("Done\n");
+	#endif
 
 	while (1)
 	{
